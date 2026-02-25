@@ -72,6 +72,53 @@ In warehouse-driven organizations:
 
 Understanding business impact is as important as resolving the technical root cause.
 
+---
+
+## Root Cause Analysis Framework
+
+Operational SAP MM support requires a structured approach to incident handling.  
+Quick fixes may restore functionality, but without proper analysis the issue is likely to return.
+
+Below is the structured framework typically used during MM incident resolution:
+
+### 1. Incident Description
+- What exactly happened?
+- Which document / movement / IDoc is affected?
+- When did the issue occur?
+
+### 2. Business Impact Assessment
+- Is warehouse operation blocked?
+- Is production impacted?
+- Is financial posting delayed?
+
+### 3. Technical Validation
+- IDoc status (WE02 / WE05)
+- Queue status (SM58 / SMQ1 / SMQ2)
+- Posting period validation
+- Movement type and configuration check
+- Master data verification
+
+### 4. Immediate Workaround
+- Can the IDoc be reprocessed (BD87)?
+- Is manual posting possible?
+- Is temporary correction acceptable?
+
+### 5. Root Cause Identification
+- Configuration inconsistency?
+- Master data error?
+- Integration mapping issue?
+- Organizational unit mismatch?
+
+### 6. Preventive Action
+- Master data correction
+- Partner profile adjustment
+- Configuration alignment
+- Process documentation update
+
+A structured RCA approach ensures system stability and reduces recurring incidents.
+
+---
+
 ## Example Scenario
 
 **Problem:** Goods Receipt posted in WMS but stock not updated in SAP.
