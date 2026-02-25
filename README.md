@@ -47,6 +47,31 @@ The goal of this project is not to present SAP customizing or full implementatio
 
 ---
 
+## Incident Classification & Business Impact
+
+In operational SAP MM environments, incidents are rarely “technical only”.  
+They directly impact warehouse operations, procurement, and financial processes.
+
+Below is a simplified classification model reflecting typical MM support scenarios:
+
+| Category        | Example Scenario                          | Business Impact |
+|-----------------|--------------------------------------------|-----------------|
+| Integration     | IDoc stuck in status 51                   | High            |
+| Master Data     | Incorrect unit of measure (UoM)           | Medium          |
+| Posting Error   | Movement type mismatch (e.g. 101 vs 103)  | Medium          |
+| Period Closing  | Posting period blocked (MMPV issue)       | High            |
+| Inventory       | Stock mismatch SAP vs physical inventory  | High            |
+
+### Impact Perspective
+
+In warehouse-driven organizations:
+
+- **High impact** incidents may block goods receipt, goods issue, or production.
+- **Medium impact** incidents may allow temporary workaround but require correction.
+- **Low impact** issues typically relate to reporting inconsistencies or minor data corrections.
+
+Understanding business impact is as important as resolving the technical root cause.
+
 ## Example Scenario
 
 **Problem:** Goods Receipt posted in WMS but stock not updated in SAP.
