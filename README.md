@@ -86,6 +86,43 @@ Understanding business impact is as important as resolving the technical root ca
 
 ---
 
+
+## Technical Monitoring & Troubleshooting
+
+In SAP MM environments integrated with WMS systems, incident resolution often requires deeper technical validation beyond basic IDoc status checks.
+
+### Core Monitoring Transactions
+
+- **WE02 / WE05** – IDoc status analysis  
+- **BD87** – IDoc reprocessing  
+- **SM58** – tRFC queue monitoring  
+- **SMQ1 / SMQ2** – qRFC inbound / outbound queues  
+- **WE20** – Partner profile verification  
+- **WE21** – Port configuration  
+- **SALE** – Logical system consistency  
+
+### Additional Functional Validation
+
+- **MB51** – Movement verification  
+- **MMBE** – Stock overview validation  
+- **MIGO** – Document reference check  
+- **OMJJ** – Movement type configuration review  
+
+### Typical Root Causes in Integration Incidents
+
+- IDoc stuck in status 51 due to:
+  - Missing or incorrect movement type mapping
+  - Plant or storage location inconsistency
+  - Unit of measure mismatch
+  - Missing batch or valuation type
+- Posting period blocked
+- Partner profile misconfiguration
+- Queue backlog (SM58 / SMQ1)
+
+Effective troubleshooting requires both:
+- Technical validation (queues, IDocs, configuration)
+- Business validation (expected stock and document flow)
+
 ##  Why this project?
 
 This repository reflects my interest in **SAP MM operational roles**, where system stability, inventory accuracy, and close cooperation with logistics teams are critical.
