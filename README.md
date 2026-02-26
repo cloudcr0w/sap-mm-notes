@@ -119,6 +119,29 @@ A structured RCA approach ensures system stability and reduces recurring inciden
 
 ---
 
+## Incident Lifecycle in SAP MM Operational Support
+
+Below is a simplified lifecycle model of a typical MM support incident:
+
+```
+Business Issue Reported
+        ↓
+Initial Validation (Document / Movement / IDoc)
+        ↓
+Technical Monitoring (WE02 / SM58 / SMQ1)
+        ↓
+Root Cause Identification
+        ↓
+Resolution (Reprocess / Config Fix / Data Correction)
+        ↓
+Business Validation (MMBE / MB51 / User Confirmation)
+        ↓
+Preventive Action & Documentation
+```
+
+This lifecycle reflects a structured approach where technical validation and business impact are always assessed together.
+---
+
 ## Example Scenario
 
 **Problem:** Goods Receipt posted in WMS but stock not updated in SAP.
