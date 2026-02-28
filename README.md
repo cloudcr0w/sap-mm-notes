@@ -195,6 +195,20 @@ Effective troubleshooting requires both:
 
 ---
 
+## Common Operational Pitfalls in SAP MM Support
+
+Even in stable environments, recurring issues often originate from predictable patterns:
+
+- Inconsistent master data maintenance
+- Delayed IDoc processing due to queue backlog
+- Period closing misalignment between MM and FI
+- Unit of measure inconsistencies across systems
+- Missing communication between warehouse and finance teams
+
+Operational stability depends not only on system configuration,
+but also on process discipline and cross-team collaboration.
+
+
 ## SAP MM vs Cloud – Incident Handling Analogy
 
 Although SAP MM operational support and cloud engineering may seem like different domains, the underlying problem-solving approach is remarkably similar.
